@@ -1,38 +1,78 @@
-.App {
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  background-color: rgb(38, 138, 141);
   text-align: center;
+  margin: 0;
+  padding: 10px 0 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+  width: 95%;
+  border: none;
+  padding: 10px 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon {
+  color: rgb(179, 179, 179);
+  position: absolute;
+  padding: 10px 0 10px 30px;
+}
+
+.item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(228, 228, 228);
+  padding: 10px;
+  border-bottom: 2px solid rgb(179, 179, 179);
 }
 
-.App-link {
-  color: #61dafb;
+.item-active {
+  display: flex;
+  background-color: rgb(183, 226, 219);
+  padding: 10px;
+  border-bottom: 2px solid rgb(179, 179, 179);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.avatar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 2px solid rgb(179, 179, 179);
+}
+
+span {
+  font-size: 26px;
+  color: rgb(179, 179, 179);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 2px solid rgb(179, 179, 179);
+  top: 10px;
+  position: relative;
+  padding: 8px;
+  margin: 0;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding-left: 10px;
+}
+
+.email {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(117, 117, 117);
+  margin: 0;
+  padding-left: 10px;
 }
